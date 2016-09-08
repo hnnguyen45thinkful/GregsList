@@ -1,0 +1,68 @@
+<!--Revised and edited and created by Hieu Nguyen-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Greg's List mock" content="Greg's List (Craig's List)">
+    <title>Greg's List</title>
+    <!-- This is the google font from the linked website -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <!--The link to use font awesome star and search and also file link to main.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+    <body>
+    <!--Use header and div class to create the nav bar and link for the top part.-->
+        <header>
+            <div class="name">
+                <h1>Greg's List</h1>
+                <nav class="top-nav">
+                    <a href class="nav-link">Post</a>
+                    <a href class="nav-link">Account</a>
+                </nav>
+            </div>
+        </header>
+        <!--Use section to crreate the search bar and box-->
+        <!--http://www.w3schools.com/tags/tag_section.asp-->
+        <section class="search-section">
+        <!--Use form action and label to create the search box and insert text-->
+        <!--http://www.w3schools.com/tags/att_form_action.asp and http://www.w3schools.com/tags/tag_label.asp has a realtion to each other -->
+            <form action="#"></form>
+            <label for="search">Search Jobs</label>
+            <input type="text" name="search input" id="search" placeholder="Search software jobs">
+            <span class="fa fa-search"> </span><!--search button mag.-->
+        </section>
+        <!--Creating the button display to shift the pages and box -->
+        <nav class="pages">
+            <a class="pages-button">prev</a>
+            <span class="pages-display">1 to 100 of 79</span>
+            <a class="pages-button">next</a>
+        </nav>
+        <!--Using main tag to create the universal list and list classes for each job categories-->
+        <!--Using the classes to create a job and also having a date and font awesome star for each job and applying span class tags-->
+        <!--http://www.w3schools.com/html/html_lists.asp , http://www.w3schools.com/tags/tag_span.asp, and  http://www.w3schools.com/tags/tag_a.asp-->
+        <main>
+            <ul class="job_listings">
+                <li class="listing_job">
+                    <span class="fa fa-star"></span>
+                    <span class="listing-date">June 22</span>
+                    <a href="#" class="listing-title">Technical Project Manager</a>
+                    <span class="listing-location">Midtown East</span>
+                </li>
+                <li class="listing_job">
+                    <span class="fa fa-star"></span>
+                    <span class="listing-date">June 21</span>
+                    <a href="#" class="listing-title">Frontend Developer</a>
+                    <span class="listing-location">SoHo</span>
+                </li>
+                <li class="listing_job">
+                    <span class="fa fa-star"></span>
+                    <span class="listing-date">June 20</span>
+                    <a href="#" class="listing-title">Senior Python Developer</a>
+                    <span class="listing-location">Flatiron</span>
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
